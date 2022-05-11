@@ -7,15 +7,25 @@ public class StringEx1 {
 //		char ch = str.charAt(5); //문자열의 5번 인덱스 문자 반환
 //		System.out.println(ch);
 		
-		String ssn = "980520-1234567";
-		//7
-		char sex = ssn.charAt(7);/////////////////////////////////////////
+//		String ssn = "980520-1234567";
+//		//7
+//		char sex = ssn.charAt(7);/////////////////////////////////////////
+//		
+//		if(sex=='1' || sex=='3') {
+//			System.out.println("male");
+//		}else {
+//			System.out.println("female");
+//		}
+		
+		String ssn = "940923-2200400";
+		char sex = ssn.charAt(7);
 		
 		if(sex=='1' || sex=='3') {
 			System.out.println("male");
-		}else {
+		}else if(sex == '2' || sex == '4') {
 			System.out.println("female");
 		}
+		
 		
 
 	}
