@@ -25,10 +25,10 @@ public class Account {
 //		System.out.println(this.balance);
 	}
 	
-	int withdraw(int amount) throws Exception{ //인위적 예외처리
+	int withdraw(int amount) throws BalanceInstufficientException{ //인위적 예외처리
  		
 		if(this.balance < amount) {
-			throw new Exception("잔액이 부족합매");//인위적 예외처리
+			throw new BalanceInstufficientException("잔액이 부족합매(" + (amount- balance) + "원 부족");//인위적 예외처리
 		}
 		this.balance -= amount;
 //		System.out.println(this.balance);
