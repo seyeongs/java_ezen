@@ -16,6 +16,12 @@ public class StringEx3 {
 		String str = "제 이름은 정세영입니다. 정세영 자바를 공부하고 있습니다. 지금은 복습중입니다";
 		String newStr = str.replace("세영", "자바");
 		System.out.println(newStr);
+		String intro = "내 나이는 25세이고 키는 170cm이고 몸무게는 55kg입니다.";
+		String newItro = intro.replaceAll("[0-9]", "*");
+		System.out.println(newItro);
+		String hello="안녕하세요. 반가워요. 잘 가세요.";
+		String newHello = hello.replaceAll("\\.", "^^"); //정규 표현식에서 .은 모든 문자를 의미한다. \.이 .을 의미함 
+		System.out.println(newHello);
 	}
 
 }
