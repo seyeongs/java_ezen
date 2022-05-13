@@ -7,10 +7,22 @@ import javaClass.Account;
 public class KeyEx1 {
 
 	public static void main(String[] args) {
-		HashMap<Key,String> hashMap = new HashMap<Key, String>();//key:value 형식의 구조
-		hashMap.put(new Key(1), "김철수"); //HashMap 객체에 키 밸류 집어넣기
-		hashMap.put(new Key(2), "홍길동"); //
-		String value = hashMap.get(new Key(1)); //Key 클래스의 hashCode();를 재정의해서 number 필드 값을 해쉬코드로 이용
+//		HashMap<Key,String> hashMap = new HashMap<Key, String>();//key:value 형식의 구조
+//		hashMap.put(new Key(1), "김철수"); //HashMap 객체에 키 밸류 집어넣기
+//		hashMap.put(new Key(2), "홍길동"); //
+//		String value = hashMap.get(new Key(1)); //Key 클래스의 hashCode();를 재정의해서 number 필드 값을 해쉬코드로 이용
+//		System.out.println(value);
+		
+		HashMap<Key, String> hashMap = new HashMap<Key, String>();
+		hashMap.put(new Key(1), "정셍");
+		hashMap.put(new Key(2), "happy");
+		hashMap.put(new Key(3), "unhappy");
+		
+		String value = hashMap.get(new Key(1));
+		System.out.println(value);
+		value = hashMap.get(new Key(2));
+		System.out.println(value);
+		value = hashMap.get(new Key(3));
 		System.out.println(value);
 		
 //		int hash = new Key(1);

@@ -26,7 +26,10 @@ public class Member2 implements Cloneable {
 		cloned.scores = Arrays.copyOf(this.scores, this.scores.length); //API메서드 사용
 		cloned.car = new Car(this.car.model); //객체를 새로 생성해서 새로운 메모리 번지 참조
 		return cloned;
+//		
+//		Member2 cloned = (Member2) clone();
 		
+//		cloned.scores =////////////////////////////////////////////////////////// 
 	}
 	
 	public Member2 getMember() { 

@@ -1,6 +1,7 @@
 package javaAPI;
 
-public class Member implements Cloneable{ // 복제할 수 있다는 표시
+//public class Member implements Cloneable{ // 복제할 수 있다는 표시
+public class Member implements Cloneable{
 	
 	public String id;
 	public String name;
@@ -17,12 +18,19 @@ public class Member implements Cloneable{ // 복제할 수 있다는 표시
 	}
 
 	public Member getMember() { 
+//		Member cloned = null;
+//		try { //clone()메서드는 try,catch문을 강제한다
+//			cloned=(Member) clone();//object.clone()메소드는 cloned에 자기 복제후 
+//		}catch(CloneNotSupportedException e) {	
+//		}
+//		return cloned; //복제 리턴
 		Member cloned = null;
-		try { //clone()메서드는 try,catch문을 강제한다
-			cloned=(Member) clone();//object.clone()메소드는 cloned에 자기 복제후 
-		}catch(CloneNotSupportedException e) {	
+		try {
+			cloned=(Member) clone();
+		}catch(CloneNotSupportedException e) {
+			
 		}
-		return cloned; //복제 리턴
+		return cloned;
 	}
 
 	@Override
