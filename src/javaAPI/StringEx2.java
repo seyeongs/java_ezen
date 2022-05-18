@@ -14,6 +14,18 @@ public class StringEx2 {
 //		}
 		
 		
+//		String str = "자바 프로그래밍";
+//		int index = str.indexOf("자바");
+//		System.out.println(index);
+//		
+//		System.out.println(str.length());
+//		
+//		if(index != -1) {
+//			System.out.println("찾는 문자가 " + index +"번 문자열 인덱스 부터 있습니다");
+//		}else {
+//			System.out.println("찾는 문자가 없습니다");
+//		}
+		
 		String str = "자바 프로그래밍";
 		int index = str.indexOf("자바");
 		System.out.println(index);
@@ -21,10 +33,11 @@ public class StringEx2 {
 		System.out.println(str.length());
 		
 		if(index != -1) {
-			System.out.println("찾는 문자가 " + index +"번 문자열 인덱스 부터 있습니다");
+			System.out.println("찾는 문자가 " +index+ "번 인덱스 부터 있습니다");
 		}else {
-			System.out.println("찾는 문자가 없습니다");
+			System.out.println("찾는 문자가 문자열이 없습니다");
 		}
+		
 	}
 
 }

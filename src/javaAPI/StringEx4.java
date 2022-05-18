@@ -12,8 +12,13 @@ public class StringEx4 {
 //		ssn = ssn.substring(0,7) + "*******";///////////////////////////////////
 //		System.out.println(ssn);
 		
-		String ssn = "940923-1123000";
-		ssn = ssn.replace(ssn.substring(7), "*******");
+//		String ssn = "940923-1123000";
+//		ssn = ssn.replace(ssn.substring(7), "*******");
+//		System.out.println(ssn);
+		
+		String ssn = "940923-1200000";
+		System.out.println(ssn.substring(7));
+		ssn = ssn.replace(ssn.substring(7), "*");
 		System.out.println(ssn);
 	}
 

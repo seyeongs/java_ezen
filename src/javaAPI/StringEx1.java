@@ -17,15 +17,22 @@ public class StringEx1 {
 //			System.out.println("female");
 //		}
 		
-		String ssn = "940923-2200400";
-		char sex = ssn.charAt(7);
+//		String ssn = "940923-2200400";
+//		char sex = ssn.charAt(7);
+//		
+//		if(sex=='1' || sex=='3') {
+//			System.out.println("male");
+//		}else if(sex == '2' || sex == '4') {
+//			System.out.println("female");
+//		}
 		
-		if(sex=='1' || sex=='3') {
+		String ssn = "940923-1111111";
+		char sex = ssn.charAt(7);
+		if(sex=='1' || sex == '3') {
 			System.out.println("male");
 		}else if(sex == '2' || sex == '4') {
 			System.out.println("female");
 		}
-		
 		
 
 	}
